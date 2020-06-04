@@ -2,8 +2,11 @@
     max-height: 10vh;
 }
 
+
+
 #header {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255,0.8)), url('bg2.JPG');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255,0.8)), url('bg3.JPG');
+    background-position: bottom;
     background-size: cover;
     min-height: 90vh;
     display: flex;
@@ -23,4 +26,20 @@
     font-size: 1.4rem;
     margin: 10px 0 2rem 0;
     font-weight: 300;
+}
+
+#header button {
+    transition: 0.5s ease all;
+}
+
+#header button:hover {
+    transform: translateY(-10px);
+}
+
+#about {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
