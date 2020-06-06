@@ -5,6 +5,7 @@
 
 #nav {
     max-height: 10vh;
+    background-color: black;
 }
 
 #header {
@@ -56,8 +57,12 @@
     color:var(--main-green);
 }
 
+#about .about-intro h3 {
+    font-size: 1em;
+}
+
 #about .about-intro p {
-    margin: 0 2rem;
+    margin: 0 2rem 4rem 0;
     padding: 0 5rem;
 }
 
@@ -98,7 +103,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: 0.5s ease all;
 }
 
 .about-main .about-cards:hover {
@@ -112,6 +116,7 @@
     padding: 0;
     color: var(--main-green);
     font-weight: bold;
+    background-color: none;
 }
 
 #support {
@@ -126,20 +131,80 @@
    margin: 0 2rem;
 }
 
-#support .row .story-content {
+#support .row .support-content {
     padding: 10px;
 }
 
-#support .row .story-content h3{
+#support .row .support-content h3{
     color: var(--main-green);
 }
 
-#support .row .story-content p {
+#support .row .support-content p {
     margin: 10px 0;
     padding: 10px 0;
 }
 
-#support .row .story-image {
+#support .row .support-image {
     display: flex;
+    justify-content: flex-end;
+}
+
+#stories {
+    min-height:100vh;
+    width: 100%;
+    background-color: var(--main-green);
+    color: white;
+    margin: 2rem 0;
+    padding: 5rem 1.5rem;
+}
+
+#stories .row {
     justify-content: center;
 }
+
+#stories .story-container {
+    margin: 0 1rem;
+    padding: 1rem;
+    max-width: 550px;
+}
+
+.story-container img {
+    min-width: 100%;
+    height: 300px;
+}
+
+#stories .story-container .story-content {
+    margin: 1.5rem 0;
+}
+
+.story-content h4 {
+    color: white;
+    font-weight: 900;
+}
+
+.story-content hr.line {
+    color: white;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.story-content button {
+    width: 100%;
+}
+
+#cta, #end {
+    min-height: 30vh;
+}
+
+#end {
+    background-color: #1a1a1a;
+    color: var(--main-green);
+    margin: 0;
+    padding: 4em;
+}
+
+#end span {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: white;
+}
+
