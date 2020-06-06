@@ -1,60 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <title>Alumni</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Alumni</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
+      <a class="navbar-brand" href="#">Alumni</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
-    <a class="navbar-brand" href="#">Alumni</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Stories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Scholarship Tips</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Scholarship Tips</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<header>
-  <div id="header">
-    <h1>GENIUSInsan@Alumni</h1>
-    <h3>Connect today, transform tommorow.</h3>
-    <button type="button" class="btn btn-primary">Learn more about us</button>
-  </div>
-</header>
+    <header>
+      <div id="header">
+        <h1>GENIUSInsan@Alumni</h1>
+        <h3>Connect today, transform tommorow.</h3>
+        <button type="button" class="btn btn-primary">
+          Learn more about us
+        </button>
+      </div>
+    </header>
 
-<section id="about">
-  <h2>Est. 2020</h2>
-  <p>43 students had descended from all corners of the country to pay homage to their beloved alma mater.</p>
-</section>
+    <section id="about">
+      <div class="about-intro">
+        <h3>about</h3>
+        <h2>Est. 2020</h2>
+        <p>
+          43 students had descended from all corners of the country to pay homage
+          to their beloved alma mater.
+        </p>
+      </div>
 
-<section id="stories">
+      <div class="container-fluid about-main">
+        <h2>This is where we connect</h2>
+        <div class="row centre">
+          <div class="col-md-4 col-sm-12 about-cards">
+            <span class="title">
+              Claim your place.
+            </span>
+            <p class="content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel,
+              nobis.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 about-cards">
+            <span class="title">
+              Discover your people and stories.
+            </span>
+            <p class="content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              minima? Sit, laborum!
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-12 about-cards">
+            <span class="title">
+              Share your alumni life.
+            </span>
+            <p class="content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis neque, labore incidunt ab dolorum atque quae temporibus minima nulla at?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section class="container-fluid" id="stories">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 story-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, in.</p>
+        </div>
+        <div class="col-md-4 col-sm-12 story-image">
+          <img src="etc.jpg" alt="story-image" srcset="" height="200px">
+        </div>
+      </div>
+    </section>
+
+    <section id="scholarship">
+      <div class="scholarship-img">
+        <img src="bg2.JPG" alt="scholarship-image" srcset="" height="200px">
+      </div>
+      <div class="scholarship-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias facilis aspernatur ducimus distinctio quibusdam aperiam. Consectetur nihil dolor, fugiat itaque inventore, labore voluptates sunt molestiae ex nobis perferendis consequatur ipsam?</p>
+      </div>
+
+      <div class="array-scholarship"></div>
+    </section>
+
+    <footer>
+
+    </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

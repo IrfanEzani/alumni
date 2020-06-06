@@ -37,9 +37,47 @@
 }
 
 #about {
-    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#about .about-intro {
+    margin: 4rem 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#about .about-intro h2 {
+    color: #18d26e;
+}
+
+#about .about-main {
+    background-color: black;
+    color: white;
+    min-height: 50vh;
+}
+
+.about-main h2 {
+    margin: 4rem 0 1rem 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-main .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin: 0 1rem 4rem 0;
+}
+
+.about-main .about-cards {
+    border: 1px solid white;
+    max-width: 200px;
+    min-width: 100px;
+    margin: 1rem 0.4rem;
 }
