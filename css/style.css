@@ -222,9 +222,10 @@
 
 /*scholarsip page*/
 #header-sc {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.8)), url('/images/bg.JPG');
-    background-position: bottom;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.8)), url('/scholarship/img/Online\ University.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     min-height: 85.5vh;
     display: flex;
@@ -321,4 +322,106 @@
     line-height: 10px;
 }
 
+/*individual pages*/
+.text-container-is {
+    margin: 4em;
+    padding: 3rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.text-container-is header {
+    text-align: center; 
+    max-width: 80vw;
+    margin-top: 1rem;
+}
+
+.text-container-is header h1 {
+    font-weight: 700;
+}
+
+.text-container-is header p {
+    font-weight: 300;
+}
+
+.text-container-is header img {
+    margin: 10px;
+}
+
+.about-article {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.about-article h2 {
+    font-weight: 400;
+    font-size: .8em;
+}
+
+main {
+    padding: 1em 3em;
+    font-size: 1.2em;
+}
+
+main p {
+    padding: 10px 0;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+main .about-author {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 19px;
+    background:var(--main-green);
+    padding: 1rem;
+    margin: 2rem 0;
+    display: flex;
+}
+
+.about-author .author-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.author-img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.author-desc {
+    margin: 0 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.author-desc h3 {
+    margin: 0;
+    color: #fff;
+    font-weight: 800;
+}
+
+.author-desc p {
+    margin: 0;
+    padding: 0;
+}
+
+.author-desc .social-link {
+    margin: 1rem 0;
+}
+main button a{
+padding: 12px 24px;
+}
+
+main button a:hover {
+    color: #18d26e;
+}

@@ -2862,8 +2862,8 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #18d26e;
   border-color: #18d26e;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(102, 201, 136, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(102, 201, 136, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem #18d26e;
+          box-shadow: 0 0 0 0.2rem  #18d26e;
 }
 
 .btn-success.disabled, .btn-success:disabled {
