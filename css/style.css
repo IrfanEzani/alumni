@@ -204,7 +204,11 @@
 }
 
 #cta, #end {
-    min-height: 30vh;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
 #end {
@@ -438,4 +442,103 @@ body.sc-body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* magazine body */
+.magazine-body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('/images/alumni.png') ;
+
+}
+
+main, .magazine-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#magazine {
+    min-height: 70vh;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.box-container {
+    min-height: inherit;
+    width: inherit;
+}
+
+.img-container, .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-container {
+    background-color: white;
+    padding: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.img-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.text-container h1 {
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0 2em;
+    margin: 2rem 0 1rem 0;
+}
+
+.text-container hr {
+    background-color: var(--main-green);
+    border-top: 1px solid var(--main-green);
+    color: var(--main-green);
+    border-bottom: 1px solid var(--main-green);
+    width: 60%;
+    float: left;
+}
+
+.text-container p {
+    padding: 0 3em;
+    margin: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-container {
+    margin: 1rem 0 2rem 0;
+}
+
+.btn-container input {
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow:  6px 6px 24px #e8e8e8, 
+    -6px -6px 24px #ffffff;
+}
+
+.btn-container input:focus {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  6px 6px 24px #e8e8e8, 
+             -6px -6px 24px #ffffff;
+}
+
+.btn-container button {
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow:  6px 6px 24px #e8e8e8, 
+    -6px -6px 24px #ffffff;
 }
