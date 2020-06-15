@@ -8,10 +8,11 @@
 }
 
 body {
+    overflow-x: hidden;
     position: relative;
 }
 
-nav, .sc-body nav {
+.main-page nav, .sc-body nav, .sc-main nav {
     height: 10vh;
     position: -webkit-sticky;
   position: sticky;
@@ -32,18 +33,19 @@ nav, .sc-body nav {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;
 }
 
 
 #header h1 {
     font-weight: 900;
     font-size: 3rem;
-    margin: 1rem 0 0 0;
+    margin: 1rem 1.2rem 0 1.2rem;
 }
 
 #header h3 {
     font-size: 1.4rem;
-    margin: 10px 0 2rem 0;
+    margin: 10px 1.2rem 2rem 1.2rem;
     font-weight: 300;
 }
 
@@ -81,6 +83,10 @@ nav, .sc-body nav {
     padding: 0 5rem;
 }
 
+#about .about-intro img {
+    margin: 10px 1rem;
+    padding: 10px;
+}
 #about .about-main {
     background-color: rgba(0,0, 0, 0.9);
     color: white;
@@ -146,18 +152,17 @@ nav, .sc-body nav {
 }
 
 #support {
-    margin: 3rem;
-    padding: 2rem 0;
+    padding: 2rem 0em;
     min-height: 40vh;
     width: 100%;
 }
 
 #support .row {
    max-width: 100vw;
-   margin: 0 2rem;
 }
 
 #support .row .support-content {
+    margin: 0;
     padding: 10px;
 }
 
@@ -172,7 +177,7 @@ nav, .sc-body nav {
 
 #support .row .support-image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 #stories {
@@ -195,7 +200,7 @@ nav, .sc-body nav {
 }
 
 .story-container img {
-    min-width: 100%;
+    width: 100%;
     height: 300px;
 }
 
@@ -300,8 +305,8 @@ nav, .sc-body nav {
 }
 
 .sc-1 img {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     filter: brightness(50%);
     transition: transform 1s, filter .5s ease-in-out;
@@ -597,7 +602,22 @@ box-shadow:  6px 6px 24px #e8e8e8,
 }
 
 @media screen  and (max-width: 1000px) {
-    nav#nav {
+    .main-page nav, .sc-body nav, .sc-main nav {
+        height: 12vh;
         padding: 10px;
+    }
+
+    #support .row .support-content {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #support .row .support-image {
+        display: flex;
+        justify-content: center;
+        margin: 1.3rem 0 1rem 0;
     }
 }
