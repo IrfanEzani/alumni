@@ -3,10 +3,24 @@
     --bold-fonts : 'Lato';
 }
 
-#nav {
-    max-height: 10vh;
-    background-color: black;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    position: relative;
+}
+
+nav, .sc-body nav {
+    height: 10vh;
+    position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+    background-color: black;
+    z-index: 100;
+}
+
+
 
 #header {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255,0.8)), url('/images/bg3.JPG');
@@ -275,9 +289,13 @@
 }
 
 .sc-1 {
-    max-width: 25vw;
+    width: 25vw;
     margin: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -296,41 +314,52 @@
     cursor: pointer;
 }
 
-.sc-1 p {
+.sc-1 .text-container-sc {
     position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    transition:.5s ease-in-out all;
+
+}
+
+
+
+.text-container-sc p {
     color: #fff;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
     text-transform: uppercase;
 }
-.sc-1 .lead {
-    top: 50%;
-    transform: translate(-50%, -50%);
+.text-container-sc .lead {
     font-size: 1.2rem;
-    line-height: 1.2rem;
-    margin: 5px 0 10px 0;
-    padding: 5px 0 10px 0;
+    margin: 0;
 }
 
-.sc-1 .author {
-    top: 90%;
-    transform: translate(-55%, -90%);
+.text-container-sc p.status {
     font-size: 10px;
-    line-height: 10px;
-}
-
-.sc-1 .status {
-    top: 60%;
-    transform: translate(-60%, -25%);
-    font-size: 10px;
-    line-height: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 /*individual pages*/
+
+body.sc-body {
+    min-height: 100vh;
+    background: url('/images/sc-bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
 .text-container-is {
+    min-width: 85vw;
     margin: 4em;
     padding: 3rem;
     display: flex;
@@ -371,42 +400,41 @@
     font-size: .8em;
 }
 
-main {
+.text-container-is main {
     padding: 1em 3em;
     font-size: 1.2em;
 }
 
-main p {
-    padding: 10px 0;
-    margin: 1rem 0;
-    font-weight: 400;
+.text-container-is main p {
+    padding: 10px 14px;
+    margin: 2rem 1rem;
+    font-weight: 300;
 }
 
-main .about-author {
-    width: 100%;
-    min-height: 200px;
+.text-container-is  .about-author {
     border-radius: 19px;
     background:var(--main-green);
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 2rem 1rem;
     display: flex;
-}
-
-.about-author .author-img {
-    height: 100%;
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.author-img img {
-    height: 200px;
-    width: 200px;
+.text-container-is .about-author .author-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container-is  .author-img img {
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: 1px solid white;
 }
 
-.author-desc {
-    margin: 0 20px;
+.text-container-is  .author-desc {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -414,19 +442,37 @@ main .about-author {
     color: #fff;
 }
 
-.author-desc h3 {
+.text-container-is  .author-desc h3 {
     margin: 0;
     color: #fff;
     font-weight: 800;
 }
 
-.author-desc p {
-    margin: 0;
-    padding: 0;
+.text-container-is .author-desc p {
+   margin: 1rem 0;
+   padding: 0;
 }
 
 .author-desc .social-link {
-    margin: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.social-link .social-btn {
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease all;
+}
+
+
+.social-btn:hover {
+    background-color: rgba(255,255,255,0.9);
 }
 main button a{
 padding: 12px 24px;
@@ -436,13 +482,20 @@ main button a:hover {
     color: #18d26e;
 }
 
-body.sc-body {
-    min-height: 100vh;
-    background: url('/images/sc-bg2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (max-width: 768px) {
+    .text-container-is  .author-desc {
+        text-align: center;
+    }
+
+    .author-desc .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
+
 
 /* magazine body */
 .magazine-body {
@@ -541,4 +594,10 @@ box-shadow:  6px 6px 24px #e8e8e8,
     border: none;
     box-shadow:  6px 6px 24px #e8e8e8, 
     -6px -6px 24px #ffffff;
+}
+
+@media screen  and (max-width: 1000px) {
+    nav#nav {
+        padding: 10px;
+    }
 }
