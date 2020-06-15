@@ -620,4 +620,16 @@ box-shadow:  6px 6px 24px #e8e8e8,
         justify-content: center;
         margin: 1.3rem 0 1rem 0;
     }
+
+    .sc-1 {
+        width: 40vw;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sc-1 {
+        width: 90vw;
+        margin: 10px 0;
+    }
 }
