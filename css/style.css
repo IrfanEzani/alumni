@@ -1,0 +1,782 @@
+:root {
+    --main-green : #18d26e;
+    --bold-fonts : 'Lato';
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+body.main-page {
+    max-width: 100vw;
+}
+
+.main-page nav, .sc-body nav, .sc-main nav {
+    height: 10vh;
+    position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+    background-color: black;
+    z-index: 100;
+}
+
+#header {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255,0.8)), url('/images/bg3.JPG');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+#header h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 1rem 1.2rem 0 1.2rem;
+}
+
+#header h3 {
+    font-size: 1.4rem;
+    margin: 10px 1.2rem 2rem 1.2rem;
+    font-weight: 300;
+}
+
+#header button {
+    transition: 0.5s ease all;
+}
+
+#header button:hover {
+    transform: translateY(-10px);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-intro {
+    margin: 4rem 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#about .about-intro h2 {
+    color:var(--main-green);
+}
+
+#about .about-intro h3 {
+    font-size: 1em;
+}
+
+#about .about-intro p {
+    margin: 0 2rem 4rem 0;
+    padding: 0 5rem;
+}
+
+#about .about-intro img {
+    margin: 10px 1rem;
+    padding: 10px;
+    width: 80%;
+}
+#about .about-main {
+    background-color: rgba(0,0, 0, 0.9);
+    color: white;
+    min-height: 40vh;
+    padding: 2rem 0;
+}
+
+.about-main h2 {
+    margin: 1.5rem 0;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.about-main .centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.about-main .centre a{
+    width: 320px;
+    height: 200px;
+    padding: 20px 0 0 0;
+}
+
+.about-main .about-cards {
+    border: 1px solid white;
+    background-color: #1a1a1a;
+    color: white;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .about-cards a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-main .about-cards:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+.about-cards .title {
+    display: block;
+    padding: 0;
+    color: var(--main-green);
+    font-weight: bold;
+    background-color: none;
+}
+
+#support {
+    padding: 2rem 0em;
+    width: 100%;
+}
+
+
+#support .row .support-content {
+    margin: 0;
+    padding: 10px;
+}
+
+#support .row .support-content h3{
+    color: var(--main-green);
+}
+
+#support .row .support-content p {
+    margin: 10px;
+    padding: 10px;
+}
+
+#support .row .support-image {
+    display: flex;
+    justify-content: center;
+}
+
+#stories {
+    background-color: var(--main-green);
+    color: white;
+    margin: 2rem 0;
+    padding: 5rem 1.5rem;
+}
+
+#stories .row {
+    justify-content: center;
+}
+
+#stories .story-container {
+    margin: 0 1rem;
+    padding: 1rem;
+    max-width: 550px;
+}
+
+.story-container img {
+    width: 100%;
+    height: 300px;
+}
+
+#stories .story-container .story-content {
+    margin: 1.5rem 0;
+}
+
+.story-content h4 {
+    color: white;
+    font-weight: 900;
+}
+
+.story-content hr.line {
+    color: white;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.story-content button {
+    width: 100%;
+}
+
+#cta, #end {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#end {
+    background-color: #1a1a1a;
+    color: var(--main-green);
+    margin: 0;
+    padding: 4em;
+}
+
+#end span {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: white;
+}
+
+/*scholarsip page*/
+#header-sc {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0,0.8)), url('/scholarship/img/Online\ University.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color:white;
+    padding: 1rem;
+}
+
+#header-sc h1 {
+    margin: 1rem .5rem;
+    color: #fff;
+}
+
+#header-sc hr{
+    min-width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0,0, 0, 0.5);
+}
+
+#header-sc p {
+    margin: 1rem;
+}
+
+.sc-about {
+    margin: 4rem 0 1rem 0;
+    padding: 1rem 0;
+}
+
+.sc-about h2 {
+    color: var(--main-green);
+}
+
+.sc-about hr {
+    color: var(--main-green);
+    width: 60%;
+}
+
+#sc-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 0;
+    padding-bottom: 3em;
+}
+
+.sc-1 {
+    width: 25vw;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sc-1 img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(50%);
+    transition: transform 1s, filter .5s ease-in-out;
+}
+
+
+.sc-1 img:hover {
+    filter: brightness(30%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sc-1 .text-container-sc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    transition:.5s ease-in-out all;
+
+}
+
+
+
+.text-container-sc p {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-container-sc .lead {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.text-container-sc p.status {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/*individual pages******************************************************************/
+
+body.sc-body {
+    min-height: 100vh;
+    background: url('/images/sc-bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.text-container-is {
+    min-width: 85vw;
+    margin: 4em;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+.text-container-is header {
+    text-align: center; 
+    max-width: 80vw;
+    margin: 1rem 0;
+}
+
+.text-container-is header h1 {
+    font-weight: 700;
+}
+
+.text-container-is header p {
+    font-weight: 300;
+}
+
+.text-container-is header img {
+    margin: 10px;
+}
+
+
+.text-container-is main {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.text-container-is main p {
+    padding: 10px 14px;
+    margin: 2rem 1rem;
+    font-weight: 300;
+}
+
+hr.divider {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+.about-article {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.about-article h2 {
+    font-weight: 400;
+    font-size: .8em;
+}
+
+
+.text-container-is  .about-author {
+    border-radius: 19px;
+    background:var(--main-green);
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container-is .about-author .author-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container-is  .author-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.text-container-is  .author-desc {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.text-container-is  .author-desc h3 {
+    margin: 0;
+    color: #fff;
+    font-weight: 800;
+}
+
+.text-container-is .author-desc p {
+   margin: 1rem 0;
+   padding: 0;
+}
+
+.author-desc .social-link {
+    display: flex;
+    align-items: flex-start;
+}
+
+.social-link .social-btn {
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease all;
+}
+
+
+.social-btn:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+ a.exit-btn{
+padding: 12px 24px;
+}
+
+ a.exit-btn button:hover {
+    color: #18d26e;
+}
+
+
+
+/* magazine body */
+.magazine-body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('/images/alumni.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main, .magazine-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#magazine {
+    padding: 10px;
+}
+
+.row .box-container {
+    margin: 0;
+    padding: 1rem;
+}
+
+.img-container, .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-container {
+    background-color: white;
+    padding: 0;
+}
+
+.img-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+}
+
+.img-container img {
+    height: 250px;
+    margin: 1em;
+    padding: 1em;
+}
+.text-container h1 {
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0 2em;
+    margin: 2rem 0 1rem 0;
+}
+
+.text-container hr {
+    background-color: var(--main-green);
+    border-top: 1px solid var(--main-green);
+    color: var(--main-green);
+    border-bottom: 1px solid var(--main-green);
+    width: 60%;
+    float: left;
+}
+
+.text-container p {
+    padding: 0 3em;
+    margin: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-container {
+    margin: 1rem 0 2rem 0;
+}
+
+.btn-container input {
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow:  6px 6px 24px #e8e8e8, 
+    -6px -6px 24px #ffffff;
+}
+
+.btn-container input:focus {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  6px 6px 24px #e8e8e8, 
+             -6px -6px 24px #ffffff;
+}
+
+.btn-container button {
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow:  6px 6px 24px #e8e8e8, 
+    -6px -6px 24px #ffffff;
+}
+
+@media screen  and (max-width: 1000px) {
+    .main-page nav, .sc-body nav, .sc-main nav {
+        height: 12vh;
+        padding: 10px;
+    }
+
+    #support .row .support-content {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #support .row .support-image {
+        display: flex;
+        justify-content: center;
+        margin: 1.3rem 0 1rem 0;
+    }
+
+    .sc-1 {
+        width: 40vw;
+        margin: 15px;
+    }
+
+    .img-container img {
+        height: 200px;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .text-container h1 {
+        font-size: 2em;
+        padding:1em 1em 0 1em;
+        margin: 1em 0 0 0 ;
+    }
+
+    
+    .text-container p {
+        padding: 0 2em;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-main h2 {
+        font-size: 1.2rem;
+    }
+
+    .sc-1 {
+        width: 90vw;
+        margin: 10px 0;
+    }
+
+    #magazine {
+        max-width: 70vw;
+        margin: 3rem 1rem;
+    }
+
+    .img-container img {
+        height: 150px;
+        margin: 1em;
+    }
+
+    #header-sc h1 {
+        font-size: 1.5em;
+    }
+
+    .text-container-is main {
+        padding: 0 1em 1em 1em;
+        font-size: 1.2em;
+    }
+
+    .text-container-is main p {
+        padding: 5px;
+        margin: 0px;
+        font-weight: 300;
+    }
+    .text-container-is .author-img img {
+        height: 125px;
+        width: 125px;
+    }
+
+    .text-container-is  .author-desc {
+        text-align: left;
+    }
+    .author-desc .social-link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    #header h1 {
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    #header h3 {
+        font-size: 1rem;
+        margin: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    #about .about-intro p {
+        margin: 1rem;
+        padding: 0 3rem;
+    }
+
+
+
+    #support .row .support-content p {
+        margin: 12px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .story-container img {
+        height: 200px;
+    }
+
+    .img-container img {
+        height: 100px;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .text-container h1 {
+        font-size: .8em;
+        padding:1em .5em 0 .5em;
+        margin: 1em 0 0 0 ;
+    }
+
+    .text-container p {
+        margin: 10px;
+        padding: 0 2em;
+        font-size: 10px;
+    }
+
+    .btn-container {
+        margin: .5rem .5rem 2rem .5rem;
+        padding: 1rem;
+    }
+
+    .btn-container input {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .btn-container button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .text-container-is {
+        margin: 1rem;
+    }
+
+    .text-container-is header img {
+        height: 200px;
+    }
+
+    .text-container-is  .author-desc {
+        text-align: center;
+    }
+    .author-desc .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
