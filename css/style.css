@@ -476,6 +476,7 @@ hr.divider {
 .text-container-is .author-desc p {
    margin: 1rem 0;
    padding: 0;
+   font-weight: 500;
 }
 
 .author-desc .social-link {
@@ -723,6 +724,7 @@ box-shadow:  6px 6px 24px #e8e8e8,
     }
 
     .text-container-is  .author-desc {
+        font-weight : 400;
         text-align: left;
     }
     .author-desc .social-link {
@@ -812,6 +814,11 @@ box-shadow:  6px 6px 24px #e8e8e8,
     .text-container-is  .author-desc {
         text-align: center;
     }
+
+    .text-container-is .author-desc p {
+       font-weight: 400;
+       font-size : 1rem;
+     }
     .author-desc .social-link {
         display: flex;
         justify-content: center;
