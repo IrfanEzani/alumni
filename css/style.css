@@ -714,7 +714,8 @@ box-shadow:  6px 6px 24px #e8e8e8,
     .text-container-is main p {
         padding: 5px;
         margin: 0px;
-        font-weight: 300;
+        font-weight: 500;
+        font-size: 1rem;
     }
     .text-container-is .author-img img {
         height: 125px;
@@ -782,7 +783,7 @@ box-shadow:  6px 6px 24px #e8e8e8,
     .text-container p {
         margin: 10px;
         padding: 0 2em;
-        font-size: 10px;
+        font-size: 1em;
     }
 
     .btn-container {
