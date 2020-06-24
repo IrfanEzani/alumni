@@ -352,7 +352,8 @@ body.main-page {
     text-transform: uppercase;
 }
 .text-container-sc .lead {
-    font-size: 1.2rem;
+    font-size: 14px;
+    width: 230px;
     margin: 0;
 }
 
@@ -703,6 +704,12 @@ box-shadow:  6px 6px 24px #e8e8e8,
         margin: 1em;
     }
 
+    .text-container-sc .lead {
+        font-size: 16px;
+        width: 330px;
+        margin: 0;
+    }
+
     #header-sc h1 {
         font-size: 1.5em;
     }
@@ -809,6 +816,12 @@ box-shadow:  6px 6px 24px #e8e8e8,
 
     .text-container-is header img {
         height: 200px;
+    }
+
+    .text-container-sc .lead {
+        font-size: 14px;
+        width: 280px;
+        margin: 0;
     }
 
     .text-container-is  .author-desc {
